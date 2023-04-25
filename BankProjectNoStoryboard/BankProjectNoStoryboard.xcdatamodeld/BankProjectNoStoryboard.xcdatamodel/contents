@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AccountId" representedClassName="AccountId" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TransactionInfo" representedClassName="TransactionInfo" syncable="YES">
+        <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="comment" attributeType="String"/>
+        <attribute name="receiverPhoneNumber" attributeType="String"/>
+        <attribute name="receivingAccountId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="senderPhoneNumber" attributeType="String"/>
+        <attribute name="sendingAccountId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="transactionTime" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="transactionAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AccountId"/>
+    </entity>
+</model>
